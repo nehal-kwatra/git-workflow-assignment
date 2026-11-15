@@ -1,0 +1,82 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+
+mkdir git-workflow-assignment
+Creates the project folder.
+
+cd git-workflow-assignment
+Moves into the project folder.
+
+git init -b main
+Initializes a local Git repository with main as the initial branch.
+
+git status
+Shows the current working-tree and staging status.
+
+git add index.html about.html
+Stages the HTML files for committing.
+
+git commit -m "Initial commit: add home and about pages"
+Saves the initial project state in Git history.
+
+git add index.html
+Stages the modified home page.
+
+git commit -m "Update home page"
+Records the second version of the home page.
+
+git branch feature
+Creates a branch named feature.
+
+git switch feature
+Switches to the feature branch.
+
+git add about.html
+Stages the feature-branch change to the about page.
+
+git commit -m "Add feature content to about page"
+Records the feature branch change.
+
+git switch main
+Switches back to the main branch.
+
+git merge --no-ff feature -m "Merge feature branch into main"
+Merges feature into main and creates a visible merge commit.
+
+git log --oneline --graph --decorate --all
+Displays the commit history, branches, and merge structure.
+
+git add .gitignore
+Stages the ignore-rules file.
+
+git commit -m "Add gitignore rules"
+Records the .gitignore configuration.
+
+git add index.html
+Stages the temporary change used for the undo demonstration.
+
+git commit -m "Add temporary announcement"
+Creates an additional commit before undoing it.
+
+git revert --no-edit HEAD
+Creates a new commit that reverses the most recent commit without deleting history.
+
+git show --stat HEAD
+Shows the latest commit and its changed-file summary.
+
+git remote add origin <YOUR-PUBLIC-GITHUB-REPOSITORY-URL>
+Connects the local repository to the GitHub repository.
+
+git remote -v
+Displays the configured remote repository URLs.
+
+git push -u origin main
+Pushes the main branch to GitHub and sets its upstream.
+
+git push -u origin feature
+Pushes the feature branch to GitHub.
+
+git branch -r
+Lists remote-tracking branches.
+
+git status --ignored
+Shows repository status, including ignored files.
